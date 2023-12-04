@@ -1,0 +1,58 @@
+.switch-button {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+.switch-button .switch-button__label {
+    background-color: gray;
+    width: 85px;
+    height: 60px;
+    border-radius: 50px;    
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.switch-button .switch-button__label:before {
+    transition: .2s;
+    display: flex;
+    width:50px;
+    height: 50px;
+    background-color: yellow;
+    background-image: url("/assets/img/sol.png");
+    background-size:50px;
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px ;
+}
+
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+    background-color: gray;
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(2rem);
+    background-color: blue;
+    background-image: url("/assets/img/luna.png");
+    background-size:50px;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+}
